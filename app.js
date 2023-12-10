@@ -70,6 +70,7 @@ app.patch('/update/:id', async (req, res) => {
         res.send({ message: e.message });
     }
 });
+// http://www.localhost:3000/addsom/
 app.patch('/addsom/:id', async (req, res) => {
     try {
         const { id } = req.params;
@@ -95,6 +96,7 @@ app.delete('/delete/:id',async(req,res)=>{
         res.send({message:e.message})
     }
 })
+// http://www.localhost:3000/delete
 app.delete('/delete/',async(req,res)=>{
     try{
         const data = req.body
@@ -105,6 +107,7 @@ app.delete('/delete/',async(req,res)=>{
         res.send({message:e.message})
     }
 })
+// exec
 run()
 function run() {
     PersonSchema
